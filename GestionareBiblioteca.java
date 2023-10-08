@@ -11,6 +11,7 @@ public class GestionareBiblioteca{
         System.out.println("\n- - - - MENIU - - - -");
         System.out.println("1. Adaugare carte");
         System.out.println("2. Listare carti");
+		System.out.println("3. Afisare numar total carti");
         System.out.println("3. Cautare carte dupa titlu");
         System.out.println("4. Iesire");
         System.out.println("- - - - - - - - - - -");
@@ -41,7 +42,16 @@ public class GestionareBiblioteca{
                 }
             }
                 break;
-            case 3:
+			case 3:
+			//afisare nr total de carti din lista 
+			if(listaCarti.isEmpty()){
+                    System.out.println("\nNu exista carti in lista!");
+                }else{
+					int nrTotal=Carte.getNrTotalCarti();
+					System.out.println("\nNumarul total de carti este: "+nrTotal);
+				}
+				break;
+            case 4:
             //cauta carte dupa titlu
                 System.out.println("\nIntroduceti titlul cartii cautate: ");
                 String titluCautat=s.nextLine();
@@ -59,7 +69,7 @@ public class GestionareBiblioteca{
                     System.out.println("- - - - - - - - - - - - - - - - - -");
                 }
                 break;
-            case 4:
+            case 5:
             //iesire din aplicatie
                 System.out.println("\nLA REVEDERE!");
                 break;
@@ -67,6 +77,6 @@ public class GestionareBiblioteca{
                 System.out.println("Optiune invalida! Incercati din nou.");
                 break;
         }
-    }while(optiune!=4);
+    }while(optiune!=5);
 }
 }
