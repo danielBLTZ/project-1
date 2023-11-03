@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T18:40:49.984Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="q4lkeZbtg9zphwEobMcN" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-03T09:31:03.149Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="D_eblRXKrq_wGtE-PKKK" version="22.0.8" type="github">
   <diagram name="Pagina-1" id="s7u_jXoOyTNwt44IqN7l">
-    <mxGraphModel dx="1434" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,6 +57,48 @@
         </mxCell>
         <mxCell id="zC79mrKcqQ9EmenrV000-40" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ adaugaMasina(masina: Masina): void&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getMasini(): List&amp;lt;Masina&amp;gt;&lt;/div&gt;&lt;div&gt;+ numarMasiniCuCuloarea(culoareCautata: String): int&lt;/div&gt;&lt;div&gt;+ masinaCuPretulCelMaiMare(): Masina&lt;/div&gt;&lt;div&gt;+ masinaCuPretulCelMaiMic(): Masina&lt;/div&gt;&lt;div&gt;+ masinaCuPutereaMaxima(): Masina&lt;/div&gt;&lt;div&gt;+ pretTotalMasiniVandute(): double&lt;/div&gt;&lt;div&gt;+ numarMasiniNevandute(): int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="zC79mrKcqQ9EmenrV000-37" vertex="1">
           <mxGeometry y="60" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-1" value="MASINA ELECTRICA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="365" width="310" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-2" value="- marca: String&lt;br&gt;- model: String&lt;br&gt;- an: int&lt;br&gt;- putere: int&lt;br&gt;- pret: double&amp;nbsp;&lt;br&gt;- culoare: String&amp;nbsp;&lt;br&gt;- stareVanzare: boolean&lt;br&gt;- tipCarburant: String&lt;br&gt;- capacitateBaterie: int&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-1">
+          <mxGeometry y="26" width="310" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-1">
+          <mxGeometry y="170" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-4" value="+ MasinaElectrica(marca: String, model: String, putere: int, pret: double, culoare: String, stareVanzare: boolean, tipCarburant: String, capacitateBaterie: int)&lt;br&gt;&lt;br&gt;+ getCapacitateBaterie(): int&lt;br&gt;+ setCapacitateBaterie(capacitate: int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-1">
+          <mxGeometry y="178" width="310" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-5" value="MASINA CU MOTOR" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-6" value="- capacitateMotor: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-5">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-5">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-8" value="+ MasinaCuMotor(marca: String, model: String, an: int, putere: int, pret: double,&amp;nbsp;&lt;br&gt;culoare: String, stareVanzare: boolean, tipCarburant: String, capacitateMotor: int)&amp;nbsp;&lt;br&gt;+ calculeazaImpozit(): double&amp;nbsp;&lt;br&gt;+getCapacitateMotor(): int&lt;br&gt;+setCapacitateMotor(capacitate: int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-5">
+          <mxGeometry y="60" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.025;exitY=0.406;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="964.96" as="sourcePoint" />
+            <mxPoint x="286" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-10" value="MASINA ABSTRACTA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="840" width="220" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-11" value="- marca: String&lt;br&gt;- model: String&lt;br&gt;- an: int&lt;br&gt;- putere: int&lt;br&gt;- pret: double&lt;br&gt;- culoare: String&lt;br&gt;- stareVanzare: boolean&lt;br&gt;- tipCarburant: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-10">
+          <mxGeometry y="30" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-10">
+          <mxGeometry y="150" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="NnzPpgwtyoBsQHczDyew-13" value="+ MasinaAbstracta(marca: String, model: String, an: int, putere: int, pret: double, culoare: String, stareVanzare: boolean, tipCarburant: String)&lt;br&gt;+ MasinaAbstracta(marca: String, model: String, an: int, putereL int, pret: double, tipCarburant: String)&amp;nbsp;&lt;br&gt;+ calculeazaImpozit(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NnzPpgwtyoBsQHczDyew-10">
+          <mxGeometry y="158" width="220" height="132" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
